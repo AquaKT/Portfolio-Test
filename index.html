@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <style>
+    /* Reset & base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; scroll-behavior: smooth; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navigation */
+    nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100; }
+    nav ul { display: flex; justify-content: center; list-style: none; padding: 1rem; }
+    nav li { margin: 0 1.5rem; font-weight: bold; cursor: pointer; }
+    nav li:hover { color: #007BFF; }
+
+    /* Sections */
+    section { min-height: 100vh; padding: 6rem 2rem 4rem; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    h1, h2 { margin-bottom: 1rem; }
+    p { max-width: 600px; text-align: center; margin-bottom: 1.5rem; }
+
+    /* Hero */
+    #home { background: #f9f9f9; }
+    #home h1 { font-size: 3rem; }
+    #home p { font-size: 1.2rem; color: #555; }
+
+    /* About */
+    #about img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1.5rem; object-fit: cover; }
+    #about h2 { font-size: 2rem; margin-bottom: 1rem; }
+
+    /* Portfolio */
+    #portfolio { background: #f1f1f1; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; width: 100%; max-width: 1000px; }
+    .portfolio-item { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .portfolio-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+    .portfolio-item img { width: 100%; border-radius: 5px; margin-bottom: 0.5rem; }
+
+    /* Contact */
+    #contact { background: #f9f9f9; }
+    form { display: flex; flex-direction: column; width: 100%; max-width: 500px; }
+    input, textarea { padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+    button { padding: 0.8rem; border: none; border-radius: 5px; background: #007BFF; color: white; font-size: 1rem; cursor: pointer; transition: background 0.3s ease; }
+    button:hover { background: #0056b3; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
+
+    @media(max-width:600px){
+      nav ul { flex-direction: column; }
+      nav li { margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h1>Your Name</h1>
+    <p>Masters graduate | Designer | Developer | Creative Professional</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="your-photo.jpg" alt="Your Name">
+    <h2>About Me</h2>
+    <p>Short bio about your professional background, education, and skills. Keep it concise and impactful.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
